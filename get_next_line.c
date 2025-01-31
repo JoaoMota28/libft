@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 15:29:48 by jomanuel          #+#    #+#             */
-/*   Updated: 2025/01/31 15:38:06 by jomanuel         ###   ########.fr       */
+/*   Updated: 2025/01/31 19:13:08 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,18 @@ size_t	ft_strlen_gnl(char *s, char del)
 	return (counter);
 }
 
+void	ft_strlcpy_gnl(char *dest, char *src, size_t len)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < len)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+}
+
 char	*join_and_clean_buff(char *line, char *buff)
 {
 	char	*new_line;
@@ -40,8 +52,8 @@ char	*join_and_clean_buff(char *line, char *buff)
 	if (!new_line)
 		return (free(line), NULL);
 	new_line[len_line + len_buff] = '\0';
-	ft_strlcpy(new_line, line, len_line);
-	ft_strlcpy(new_line + len_line, buff, len_buff);
+	ft_strlcpy_gnl(new_line, line, len_line);
+	ft_strlcpy_gnl(new_line + len_line, buff, len_buff);
 	free(line);
 	while (buff[len_buff + i])
 	{
