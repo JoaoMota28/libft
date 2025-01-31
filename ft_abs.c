@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 12:30:49 by jomanuel          #+#    #+#             */
-/*   Updated: 2025/01/31 12:31:31 by jomanuel         ###   ########.fr       */
+/*   Updated: 2025/01/31 15:38:23 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ int	ft_abs(int val)
 	if (val >= 0)
 		return (val);
 	else
-		return(-val);
+		return (-val);
 }

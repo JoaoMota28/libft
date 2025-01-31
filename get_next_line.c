@@ -6,7 +6,7 @@
 /*   By: jomanuel <jomanuel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 15:29:48 by jomanuel          #+#    #+#             */
-/*   Updated: 2025/01/31 15:31:29 by jomanuel         ###   ########.fr       */
+/*   Updated: 2025/01/31 15:38:06 by jomanuel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ char	*join_and_clean_buff(char *line, char *buff)
 	buff[i] = '\0';
 	return (new_line);
 }
-
 
 char	*get_next_line(int fd)
 {
